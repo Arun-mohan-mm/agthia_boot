@@ -1,0 +1,699 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agthia</title>
+
+
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'sta/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/home_page.css' %}" type="text/css">
+
+
+      <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+
+        .topnav {
+            font-family:josefin sans;
+            width:250px;
+        }
+
+
+
+
+
+         .pt-recipe-span {
+            color:#f1e3bd;
+        }
+
+
+
+         .top-recipe-button {
+            font-size:15px;
+            border:2px solid #d7b27b;
+            padding:10px;
+            width:220px;
+            background:transparent;
+            font-family:josefin sans;
+        }
+
+
+        .top_rec_spad_hr {
+            margin-bottom:5px;
+        }
+
+
+         .top-recipe.spad > div:first-child  h6 {
+            font-family:josefin sans;
+        }
+
+          .top-recipe.spad > div:first-child  h4 {
+            font-family:cormorant;
+        }
+
+
+          .top-recipe.spad > div:first-child  p {
+            font-family:josefin sans;
+        }
+
+         .book_tabble {
+            background-color:#ebe5d5;
+            opacity:1;
+           }
+
+
+
+         .book_tabble h5 {
+            font-family:josefin sans;
+            margin-top:10px;
+           }
+
+
+           .book_tabble h3 {
+            font-family:forum;
+           }
+
+
+
+           .hr_two {
+                border: 0;
+                height: 1px;
+                background: #d7b27b;
+                width:240px;
+                margin-left:290px;
+           }
+
+
+
+
+        .book_tabble > .hr_one {
+            margin-top:120px;
+            border: 0;
+            height: 1px;
+            background: #d7b27b;
+            width:240px;
+            margin-left:290px;
+        }
+
+
+        .hr-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .hr_one {
+            border: 0;
+            height: 1px;
+            background: #d7b27b;
+            width: 240px;
+        }
+
+
+
+        .book_form_input
+        {
+        height:40px;
+        background-color:#ebe5d5;
+        border:1px solid #b4b0a9;
+        }
+
+         .book_form_inputt
+        {
+        height:40px;
+        background-color:#ebe5d5;
+        border:1px solid #b4b0a9;
+        }
+
+          .book_form_inputtt
+        {
+        font-family:josefin sans;
+        border:none;
+        height:40px;
+        background-color:white;
+        }
+
+
+          .book_form_input::placeholder
+        {
+        color:black;
+        font-weight:bold;
+        font-family:josefin sans;
+        padding:10px;
+        }
+
+
+        .book_form_inputt::placeholder
+        {
+        color:black;
+        font-weight:bold;
+        font-family:josefin sans;
+        padding:10px;
+        }
+
+
+        .footer-section .fs-left p {
+            font-family:josefin sans;
+          }
+
+
+          .footer-section .fs-left {
+            font-family:josefin sans;
+          }
+
+
+
+
+        .footer-section .subscribe-form p {
+            font-family:josefin sans;
+        }
+
+
+        .footer-section .subscribe-form input[type="email"] {
+            border-color: #46484e;
+            font-family:josefin sans;
+        }
+
+        .footer-section .subscribe-form button {
+
+            font-family:josefin sans;
+
+        }
+
+
+
+    .footer-section .fs-left hr {
+        width:65px;
+        border: none;
+        height: 2px;
+        color: #4c443a3;
+        background-color: #4c443a;
+    }
+
+
+    .footer-section .fs-left span {
+        font-size:12px;
+        font-family:josefin sans;
+        letter-spacing:1px;
+    }
+
+
+     .footer-section .footer_mail p {
+        color:#d7b27b;
+        font-family:josefin sans;
+
+    }
+
+
+    .copyr_hr {
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        background-color: #46484e;
+    }
+
+
+    .copyr_foo {
+        background-color:#1f232c;
+    }
+
+    .copyright-text {
+         margin-bottom:40px;
+         margin-top:10px;
+         color:white;
+         font-size:15px;
+         font-size:15px;
+    }
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+ .navbar-custom {
+     background-color:#292D36;
+  }
+
+  .navbar-custom .nav-link {
+            color: white;
+             font-family:josefin sans;
+   }
+
+
+  .background-div {
+    background-image: url('{% static 'sta1/images/background_image1.jpg' %}');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color */
+    padding: 50px; /* Padding for content spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    height: 100vh; /* Full height */
+}
+
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.image-div {
+    max-width: 100%;
+    height: auto;
+}
+.content-div {
+    padding: 20px;
+}
+
+.custom-about1 {
+    margin-top:5vh;
+    margin-left:15vh;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+
+        <div class="container" align="center">
+
+            <div class="logo" style="height:5vh;">
+                <a href="{% url 'home' %}"><img src="{% static 'sta1/images/logo_agthia.jpg' %}" alt=""></a>
+            </div><br>
+    </header>
+    <hr>
+
+    <!--
+    <header class="header-nav">
+                <div class="nav-container">
+                    <div class="nav-menu">
+                        <nav class="main-menu mobile-menu">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home' %}">About</a>
+                                </li>
+
+                                  <li>
+                                    <a href="{% url 'restaurants' %}">Restaurants</a>
+                                </li>
+
+                                <li>
+                                    <a href="{% url 'reservation' %}">Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    </header>
+    -->
+    <!-- Header End -->
+
+<nav class="navbar navbar-expand-sm navbar-custom justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'restaurants' %}">Restaurants</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#reservatt">Reservation</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+</nav>
+
+
+
+ <div class="background-div">
+        <h3 style="font-family:times new roman;color:white;margin-top:22vh;margin-left:22vh;">EVERY DISH IS A<br> CHAPTER. AND EVERY <br>CONCEPT UNFOLDS <span style="color:#f1e3bd;">A NEW <br>CULINARY ADVENTURE.</span></h3><br>
+        <h6 style="font-family:josefin sans;margin-left:22vh;">Every dish is a chapter. And every concept unfolds a new <br>culinary adventure. Every dish is a chapter.</h6>
+        <button class="btn btn-primary mt-3" style=" border:2px solid #d7b27b;
+        font-family:josefin sans;
+        padding:10px;
+        width:200px;margin-left:22vh;background:transparent;" onclick="location.href='#reservatt'">For Reservations</button>
+    </div>
+
+
+
+ <div class="container-fluid" style="background-color:lightgray;">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-4">
+                <div class="image-div custom-about1">
+                    <img src="{% static 'sta1/images/about_image.jpeg' %}" class="img-fluid" alt="Image Description">
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-1 mb-5 d-none d-md-block mx-auto">
+                <div class="content-div-center">
+                    <div class="about_sect_two" style="height:400px;"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4">
+                <div class="content-div-right">
+                      <h3 style="font-family:cormorant garamond;"><b>About</b></h3><br>
+                  <p style="font-family:josefin sans;line-height:20px;">Agthia-Food Company is a family of unique food concepts that are built on sustainability and delicate culinary excellence</p>
+                  <p style="font-family:josefin sans;line-height:20px;">We strive to provide everyone with affordable and high-quality food with a promise to
+                    sustain better human health and the environment, which will make a difference for generations to come.</p>
+
+                 <h3 style="font-family:cormorant garamond;"><b>Our People</b></h3><br>
+                 <p style="font-family:josefin sans;line-height:20px;">With more than 800+ employees, we would not be where we are today without the efforts of our employees.
+                     Our senior management that holds internationally recognized professionals in all functions, continues to drive
+                     our dynamic and collaborative organization. We have faith in diversity of personalities,
+                     experiences, and backgrounds as conducive to involve and leads to more innovative working lives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Top Recipe Section Begin --><br><br><br><br><br><br>
+    <section class="top-recipe spad">
+        <div align="center">
+            <hr class="top_rec_spad_hr">
+            <h6>RESTAURANTS</h6>
+            <hr><br>
+            <h4>LOCAL BRANDS</h4><br>
+            <p>Every dish is a chapter. And every concept unfolds a new <br>culinary adventure. Every dish is a chapter.</p>
+
+
+
+             <div class="image-row">
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/local_brand_home11.jpeg' %}" alt="Image 1">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>BU MASOUD</b></div>
+                </div>
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/local_brand_home22.jpeg' %}" alt="Image 2">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>BURGER INN</b></div>
+                </div>
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/local_brand_home33.png' %}" alt="Image 1">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>FATAYER AL TAYER</b></div>
+                </div>
+
+
+             </div>
+
+
+            <br><br>
+            <h4 class="inter_nat_head">INTERNATIONAL BRANDS</h4><br>
+            <p>Every dish is a chapter. And every concept unfolds a new <br>culinary adventure. Every dish is a chapter.</p>
+
+
+           <div class="image-row">
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/international_brand_home1.png' %}" alt="Image 1">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>BEEF BAR</b></div>
+                </div>
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/international_brand_home2.jpeg' %}" alt="Image 2">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>NOVIKOV</b></div>
+                </div>
+
+                <div class="figure-box">
+                    <img src="{% static 'sta1/images/international_brand_home3.jpeg' %}" alt="Image 1">
+                    <div class="caption" style="border:1px transparent #8c734f;
+            margin-top:0px; height:50px; padding-top:8px; padding-left:8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.14);font-family:felix titling;"><b>FERDI</b></div>
+                </div>
+
+
+             </div>
+
+
+            <button class="top-recipe-button">View Restaurants</button>
+
+
+        </div>
+
+    </section>
+    <!-- Top Recipe Section End -->
+
+
+
+
+
+
+    <!-- Categories Filter Section Begin -->
+
+    <!-- Categories Filter Section End -->
+
+
+
+
+
+
+    <!-- Feature Recipe Section Begin -->
+    <!-- Feature Recipe Section End -->
+
+
+
+
+
+
+
+
+       <!-- Top Recipe Section1 Begin -->
+    <section class="top_recipe_sec1" id="reservatt">
+
+
+    <div class="book_tabble book_tabblee" id="b_tab">
+
+        <hr class="hr_one">
+        <h5 align="center">RESERVATION</h5>
+        <hr class="hr_two">
+        <h3 align="center"><b>BOOK YOUR TABLE NOW</b></h3>
+
+        <form class="book_form" method="post" action="{% url 'book_table' %}">
+            {% csrf_token %}
+
+            <input class="book_form_input" id="b_f_i_t" type="text" name="nam" placeholder="Name">
+             <input class="book_form_input" id="b_f_i_t" type="text" name="emm" placeholder="Email"><br>
+             <input class="book_form_inputt" id="b_f_i" type="text" name="count" placeholder="Person">
+             <input class="book_form_inputt" id="b_f_i" type="text" name="dat" placeholder="Timing">
+             <input class="book_form_inputt" id="b_f_i" type="text" name="tim" placeholder="Date">
+            <div align="center">
+            <input class="book_form_inputtt" type="submit" value="Book a Table">
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    </section>
+    <!-- Top Recipe Section0 End -->
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="row rowz">
+                <div class="col-lg-5">
+                    <div class="fs-left">
+
+                        <p><hr><span>CONTACT</span><hr><br><br>
+                        AL-SHARQIA TOWER<br>
+                        FLOOR 7<br>
+                        JABER AL MUBARAK<br>
+                        STREET, BLOCK 2<br>
+                        KUWAIT CITY</p>
+                    </div>
+                </div>
+
+
+                <div class="row1">
+                    <form action="#" class="subscribe-form">
+                        <p>Join our mailing list for updates.<br>Get news & other events</p>
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+
+                </div>
+
+                    <div class="footer_mail">
+                        <p>2226045<br>
+                        INFO@AGTHIA-FOOD.COM</p>
+                    </div>
+
+            </div>
+</footer>
+        <hr class="copyr_hr">
+    <footer class="row copyr_foo">
+
+
+
+                <div class="col-lg-12">
+                    <div class="copyright-text" align="center">
+                            © Copyright
+                    </div>
+                </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'sta/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'sta/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sta/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'sta/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'sta/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'sta/js/main.js' %}"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.querySelectorAll(".main-menu > ul > li");
+
+    menuItems.forEach(function(item) {
+        item.addEventListener("click", function(event) {
+            var submenu = this.querySelector(".sub-menu");
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+            event.stopPropagation();
+        });
+    });
+
+    // Close the submenu if clicked outside
+    document.addEventListener("click", function(event) {
+        var submenus = document.querySelectorAll(".sub-menu");
+        submenus.forEach(function(submenu) {
+            if (submenu.style.display === "block" && !submenu.parentNode.contains(event.target)) {
+                submenu.style.display = "none";
+            }
+        });
+    });
+});
+
+</script>
+
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var pageTopRecipe = document.querySelector(".page-top-recipe");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    pageTopRecipe.classList.add("margin-top-500");
+  } else {
+    x.className = "topnav";
+    pageTopRecipe.classList.remove("margin-top-500");
+  }
+}
+</script>
+
+</body>
+
+</html>
